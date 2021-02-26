@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chapter 31 To 34</title>
+</head>
+
+<body>
+  <script>
+    let name = prompt("What is Your Name?");
+    let date = prompt('Please Enter the Date OF Your DOB');
+    let month = prompt('Please Enter the Month OF Your DOB');
+    let year = prompt('Please Enter the Year OF Your DOB');
+
+    let now = new Date()
+    let currentHrs = now.getHours();
+    let d = new Date(year , month , date)
+    let ageInDays = Math.floor(d.getTime() / (1000*60*60*24));
+    let ageInHours = d.getTime() / (1000*60*60);
+
+    let diff = Math.floor((now.getTime() - d.getTime()) / (1000 * 60 * 60 * 24 * 365) )
+
+
+    if (currentHrs > '5' && currentHrs < '12') {
+      console.log(`Hello ${name} Good Morning`)
+      console.log(`Your DOB is ${d}`)
+      console.log(`Your are ${diff} Years Old`)
+      console.log(`Your age in Days is ${ageInDays}`)
+      console.log(`Your age in Hours is ${ageInHours}`)
+    } else if (currentHrs > '12' && currentHrs < '16') {
+      console.log(`Hello ${name} Good Morning`)
+      console.log(`Your DOB is ${d}`)
+      console.log(`Your are ${diff} Years Old`)
+      console.log(`Your age in Days is ${ageInDays}`)
+      console.log(`Your age in Hours is ${ageInHours}`)
+    } else if (currentHrs > '16' && currentHrs < '19') {
+      console.log(`Hello ${name} Good Morning`)
+      console.log(`Your DOB is ${d}`)
+      console.log(`Your are ${diff} Years Old`)
+      console.log(`Your age in Days is ${ageInDays}`)
+      console.log(`Your age in Hours is ${ageInHours}`)
+    } else {
+      console.log(`Hello ${name} Good Morning`)
+      console.log(`Your DOB is ${d}`)
+      console.log(`Your are ${diff} Years Old`)
+      console.log(`Your age in Days is ${ageInDays}`)
+      console.log(`Your age in Hours is ${ageInHours}`)
+    }
+
+  </script>
+</body>
+
+</html>

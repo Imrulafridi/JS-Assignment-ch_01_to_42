@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 21 To 30</title>
+  </head>
+  <body>
+    <script>
+      // ASSIGNMENT NO 1
+    
+      var float = prompt('Enter Any Decimal number only to Get numerical value')
+      alert(Math.ceil(float))
+
+      var text = "This is my dummy text";
+      var newText = text.slice(0, 4);
+      var reverse = ""
+      for (let i = newText.length - 1; i >= 0 ; i--) {
+        reverse = reverse + newText[i]
+      }
+      alert(reverse)
+
+      // ASSIGNMENT NO 2;
+
+      var str = "cloUd naTive computinG"
+      var smallStr = str.toLowerCase()
+
+      var words = smallStr.split(' ')
+      
+      for ( let i = 0 ; i < words.length ; i++ ) {
+        words[i] = words[i][0].toUpperCase() + words[i].slice(1)
+      }
+
+      var newT = words.join(" ")
+      
+      console.log(newT)  
+
+
+
+    </script>
+  </body>
+</html>

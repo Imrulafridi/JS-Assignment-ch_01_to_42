@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chapter 39 TO 42</title>
+</head>
+<body>
+  
+  <script>
+    let cors1 =+ prompt('Enter Your First Course Numbers')
+    let cors2 =+ prompt('Enter Your Second Course Numbers')
+    let cors3 =+ prompt('Enter Your Third Course Numbers')
+    let cors4 =+ prompt('Enter Your Fourth Course Numbers')
+    let cors5 =+ prompt('Enter Your Fifth Course Numbers')
+
+    let totalObt = (cors1 + cors2 + cors3 + cors4 + cors5) * 100 / 500;
+
+    console.log(totalObt)
+
+    switch(true){
+      case (totalObt > 90) :
+        console.log('Your Grade is A+')
+        break;
+      case (totalObt > 75) :
+        console.log('Your Grade is A')
+        break;
+      case (totalObt > 60) :
+        console.log('Your Grade is B')
+        break;
+      case (totalObt > 45) :
+        console.log('Your Grade is C')
+        break;
+      case (totalObt > 30) :
+        console.log('Your Grade is D')
+        break;
+      default :
+        console.log('You Grade is F')
+    }
+
+
+  </script>
+
+</body>
+</html>

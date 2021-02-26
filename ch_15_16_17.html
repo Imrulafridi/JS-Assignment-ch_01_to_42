@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 15 16 AND 17</title>
+</head>
+<body>
+
+    <script>
+        let courses = [];
+        let course1 = prompt('Enter Your First Course');
+        let course2 = prompt('Enter Your Second Course');
+        let course3 = prompt('Enter Your Third Course');
+        let course4 = prompt('Enter Your Fourth Course');
+        let course5 = prompt('Enter Your Fifth Course');
+
+        courses.push(course1, course2 , course3 , course4 , course5 );
+
+        alert(courses)
+
+        let editcourse1 = prompt(course1 , course1);
+        let editcourse2 = prompt(course2 , course2);
+        let editcourse3 = prompt(course3 , course3);
+        let editcourse4 = prompt(course4 , course4);
+        let editcourse5 = prompt(course5 , course5);
+
+        courses.splice(0 , 1 , editcourse1);
+        courses.splice(1 , 2 , editcourse2);
+        courses.splice(2 , 3 , editcourse3);
+        courses.splice(3 , 4 , editcourse4);
+        courses.splice(4 , 5 , editcourse5);
+
+        alert(courses);
+
+
+    </script>
+    
+</body>
+</html>

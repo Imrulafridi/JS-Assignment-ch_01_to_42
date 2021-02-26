@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 10 To 14</title>
+</head>
+<body>
+    <script>
+        // Calculator in Alert
+        var num1 = Number(prompt('Enter Your First num'))
+        var sign = prompt('Enter Your sign to calculate')
+        var num2 = Number(prompt('Enter Your Second num'))
+        if(sign === "+"){
+            alert(num1+num2)
+        }else if(sign === '-' ){
+            alert(num1-num2)
+        }else if(sign === '*') {
+            alert(num1*num2)
+        }else if(sign === '/'){
+            alert(num1/num2)
+        }else {
+            alert('Enter Only number and sign')
+        }
+        
+        // Percentage Calculate
+        
+        var cors1 = parseInt(prompt('Enter Your First Course Numbers'))
+        var cors2 = parseInt(prompt('Enter Your Second Course Numbers'))
+        var cors3 = parseInt(prompt('Enter Your Third Course Numbers'))
+        var cors4 = parseInt(prompt('Enter Your Fourth Course Numbers'))
+        var cors5 = parseInt(prompt('Enter Your Fifth Course Numbers'))
+        
+        var totalObtMarks = cors1 + cors2 + cors3 + cors4 + cors5;
+  
+        alert((totalObtMarks * 100) / 500)
+
+</script>
+</body>
+</html>
